@@ -1,0 +1,15 @@
+// Hooks in React
+1. useState
+2. useEffect
+3. useContext
+There are few less commonly used built in Hooks are
+1. useLocation
+2. useReducer
+2. useRef
+
+// Context API
+
+* How to make api call in react?
+1) Using Fetch API
+2) Using Axios
+3) Using react-fetch-hook
