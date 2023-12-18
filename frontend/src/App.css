@@ -1,8 +1,19 @@
-.para{
-    display: inline-block;
-    margin-right: 17px;
+.para {
+  display: inline-block;
+  margin-right: 17px;
 }
 
-.img{
-    width: 100%;
+.img {
+  width: 100%;
+}
+
+.ellipsis-container {
+  max-width: 950px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-body span {
+  font-weight: bold;
 }
