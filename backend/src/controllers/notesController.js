@@ -34,7 +34,7 @@ async function addNewNote(req, res) {
     console.error(error.message);
     res.status(500).send("Internal server error"); // status 500 means internal server error
   }
-};
+}
 
 const updateNote = async (req, res) => {
   try {
