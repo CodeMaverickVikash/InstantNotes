@@ -1,5 +1,4 @@
 import React from "react";
-import download from "./download.jpg";
 
 export default function About() {
   // const pStyle = {width: '508px', display: 'inline-block', marginRight: '17px'}

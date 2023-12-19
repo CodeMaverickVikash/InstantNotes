@@ -1,34 +1,26 @@
-import React, { useContext, useState } from "react";
-import noteContext from "../context/notes/noteContext";
 import CustomModal from "./common/Custom-modal";
+import React, { useState, useEffect } from "react";
 
-export default function AddNote({ showAlert }) {
-  const context = useContext(noteContext);
-  const { addNote } = context;
-  const [note, setNote] = useState({ title: "", description: "", tag: "" });
-
+const ViewNote = ({ viewNote }) => {
+  const [showHideModal, setShowHideModal] = useState(false);
+  const [note, setNote] = useState(viewNote);
   const modalOptions = {
-    launchBtnText: "Add note",
-    title: "Add a note",
-    primaryBtn: "Add note",
-    primaryBtnDisabled:
-      note.title === "" || note.description === "" || note.tag === "",
-    primaryCallback: submitNote,
+    title: "View note",
   };
 
-  const onchange = (e) => {
-    setNote({ ...note, [e.target.name]: e.target.value });
-  };
-
-  function submitNote(e) {
-    e.preventDefault(); // it prevent to reload page
-    addNote(note.title, note.description, note.tag);
-    showAlert("Note added successfully", "success");
-    setNote({ title: "", description: "", tag: "" });
-  }
+  useEffect(() => {
+    setShowHideModal(() => {
+      return Object.keys(viewNote).length === 0 ? false : true;
+    });
+    setNote(viewNote);
+  }, [viewNote]);
 
   return (
-    <CustomModal modalOptions={modalOptions}>
+    <CustomModal
+      showHideModal={showHideModal}
+      setShowHideModal={setShowHideModal}
+      modalOptions={modalOptions}
+    >
       <form>
         <div className="mb-3">
           <label htmlFor="title" className="form-label">
@@ -39,9 +31,8 @@ export default function AddNote({ showAlert }) {
             className="form-control"
             id="title"
             name="title"
-            aria-describedby="emailHelp"
             value={note.title}
-            onChange={onchange}
+            readOnly
           />
         </div>
         <div className="mb-3">
@@ -52,10 +43,10 @@ export default function AddNote({ showAlert }) {
             type="textarea"
             className="form-control"
             id="description"
-            rows="7"
             name="description"
             value={note.description}
-            onChange={onchange}
+            rows="7"
+            readOnly
           />
         </div>
         <div className="mb-3">
@@ -68,10 +59,12 @@ export default function AddNote({ showAlert }) {
             id="tag"
             name="tag"
             value={note.tag}
-            onChange={onchange}
+            readOnly
           />
         </div>
       </form>
     </CustomModal>
   );
-}
+};
+
+export default ViewNote;

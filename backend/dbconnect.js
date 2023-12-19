@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 /**
- * @description connect to inotebook database of mongodb
+ * @description connect to instantnotes database of mongodb
  */
 const connectMongoDb = (mongoURI) => {
   try {

@@ -8,7 +8,7 @@
 }
 
 .ellipsis-container {
-  max-width: 950px;
+  max-width: 85%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -16,4 +16,9 @@
 
 .card-body span {
   font-weight: bold;
+}
+
+.action-icons {
+  position: absolute;
+  left: 80%;
 }

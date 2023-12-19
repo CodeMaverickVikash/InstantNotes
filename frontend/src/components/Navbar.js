@@ -38,7 +38,7 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link
                 className={`nav-link $(location.pathname === "/about" ? "active" : "")`}
@@ -71,9 +71,6 @@ export default function Navbar() {
             <form className="d-flex">
               <Link className="btn btn-primary mx-3" to="/login">
                 Login
-              </Link>
-              <Link className="btn btn-primary" to="/signup">
-                Signup
               </Link>
             </form>
           ) : (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 export default function Signup(props) {
   // useState hook
@@ -99,10 +99,16 @@ export default function Signup(props) {
               required
             />
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-secondary">
             Signup
           </button>
         </form>
+        <div className="login-instruct my-3">
+          <span>already have an account! </span>
+          <Link className="" to="/login">
+            Login
+          </Link>
+        </div>
       </div>
     </>
   );

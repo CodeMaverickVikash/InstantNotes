@@ -1,17 +1,12 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
-export default function Login(props) {
-  // useState hook
+export default function Login({ showAlert }) {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
+  const history = useHistory();
 
-  // useHistory hook for redirecting
-  let history = useHistory();
-
-  // Function
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // API Call
     const response = await fetch(`http://localhost:5000/api/auth/login`, {
       method: "POST",
       headers: {
@@ -27,10 +22,10 @@ export default function Login(props) {
     if (json.success) {
       // save the auth token and redirect
       localStorage.setItem("token", json.authtoken);
-      props.showAlert("Loggedin successfully", "success");
+      showAlert("Loggedin successfully", "success");
       history.push("/");
     } else {
-      props.showAlert("Invalid credentials", "danger");
+      showAlert("Invalid credentials", "danger");
     }
   };
 
@@ -70,10 +65,16 @@ export default function Login(props) {
               onChange={onChange}
             />
           </div>
-          <button type="submit" className="btn btn-primary">
-            Submit
+          <button type="submit" className="btn btn-secondary">
+            Login
           </button>
         </form>
+        <div className="signup-instruct my-3">
+          <span>do not have an account! </span>
+          <Link className="" to="/signup">
+            Create one
+          </Link>
+        </div>
       </div>
     </>
   );

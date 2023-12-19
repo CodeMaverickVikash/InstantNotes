@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Alert from "./components/Alert";
@@ -10,12 +11,11 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import NoteState from "./context/notes/NoteState";
 import { useState } from "react";
+import React from "react";
 
 function App() {
-  // useState hook
   const [alert, setAlert] = useState(null);
 
-  // Function
   const showAlert = (message, type) => {
     setAlert({
       msg: message,
