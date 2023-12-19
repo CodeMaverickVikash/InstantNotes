@@ -1,6 +1,10 @@
 import React from "react";
 
 function Alert(props) {
+  if (!props.alert) {
+    return null;
+  }
+
   const capitalize = (word) => {
     if (word === "danger") {
       word = "error";
@@ -10,7 +14,7 @@ function Alert(props) {
   };
 
   return (
-    <div style={{ height: "50px" }}>
+    <div style={{ height: "50px", marginBottom: "20px" }}>
       {props.alert && (
         <div
           className={`alert alert-${props.alert.type} alert-dismissible fade show`}

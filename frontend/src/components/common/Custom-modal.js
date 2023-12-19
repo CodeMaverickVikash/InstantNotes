@@ -37,7 +37,7 @@ function CustomModal({
   return (
     <>
       {modalOptions.launchBtnText && (
-        <Button variant="primary mx-3" onClick={handleShow}>
+        <Button variant="primary mx-3 mt-4" onClick={handleShow}>
           {modalOptions.launchBtnText}
         </Button>
       )}
