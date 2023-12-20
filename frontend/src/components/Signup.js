@@ -42,7 +42,7 @@ export default function Signup(props) {
   };
   return (
     <>
-      <div className="container col-md-6">
+      <div className="container col-md-6 my-5">
         <h2 className="mb-3">Create An Account</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
