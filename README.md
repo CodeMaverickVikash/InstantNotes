@@ -28,4 +28,10 @@ Assign priority levels to tasks, helping you prioritize and focus on high-import
 Set deadlines for your tasks to stay on schedule. Receive timely reminders to ensure you meet important dates.
 
 ## Screenshot
+![image](https://github.com/CodeMaverickVikash/InstantNotes/assets/90571844/7f3a2d3a-b72f-4c41-a317-e6f94ca8c0ed)
+![image](https://github.com/CodeMaverickVikash/InstantNotes/assets/90571844/60ea88dd-9bc6-4a6a-bf8c-61c065c82200)
+![image](https://github.com/CodeMaverickVikash/InstantNotes/assets/90571844/c9a2beb1-28a2-4a29-9762-1bac5337d97a)
+![image](https://github.com/CodeMaverickVikash/InstantNotes/assets/90571844/86082291-a880-48f4-8d03-b7f7ba0b6a57)
+![image](https://github.com/CodeMaverickVikash/InstantNotes/assets/90571844/1a2fef31-1716-404d-bd01-d5bab85eea91)
+![image](https://github.com/CodeMaverickVikash/InstantNotes/assets/90571844/d09bd62a-82c4-4c68-b213-bbbb123c9fae)
 
