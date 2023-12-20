@@ -18,7 +18,7 @@ This Note Taking App is built using the MERN (MongoDB, Express.js, React, Node.j
 
 ## Quick start:
 - **Install MongoDB**: Visit the official MongoDB website (https://www.mongodb.com/try/download/community) to download the MongoDB Community Server.
-- **Start MongoDB server**: by running `mongod` command in terminal, it's a global means anywhere you can run. you can use cmd/shell to work with database but we have one more option MongoDB compass to work with database. it's GUI tool.
+- **Start MongoDB server**: by running `mongod` command in the terminal, it's a global means anywhere you can run. you can use cmd/shell to work with the database but we have one more option MongoDB compass to work with the database. it's a GUI tool.
 `mongod` is the primary daemon process for the MongoDB database system. It is responsible for handling database requests, managing data files, performing data transformations, and executing tasks related to database storage and retrieval. When you start mongod, you are essentially starting the MongoDB server.
 - **MongoDB Compass**: MongoDB Compass is the official graphical user interface (GUI) for MongoDB. It provides a visual way to interact with and manage MongoDB databases, making it easier for developers and administrators to explore and manipulate data.
 
@@ -32,7 +32,7 @@ npm install
 npm run start
 ```
 
-- **MongoDB interection using cmd**: Run `mongo` in cmd, this command connect you with MongoDB server, now you can interect with MongoDB, it's a global, means anywhere can run.
+- **MongoDB interaction using cmd**: Run `mongo` in cmd, this command connects you with the MongoDB server, now you can interact with MongoDB, it's global, which means anywhere can run.
     - ***Basic query***:
         ```
         show dbs // to show all dbs
@@ -45,7 +45,7 @@ npm run start
         exit
         ```
 
-- **Debug nodejs app**: you can't run "node fileName" and debugger parrelly, you need only run debugger, it run your app and debugger parrelly.
+- **Debug nodejs app**: you can't run "node fileName" and debugger parallelly, you need only run the debugger, it runs your app and debugger parallelly.
 
 ## Screenshot
 ![image](https://github.com/CodeMaverickVikash/InstantNotes/assets/90571844/7f3a2d3a-b72f-4c41-a317-e6f94ca8c0ed)
